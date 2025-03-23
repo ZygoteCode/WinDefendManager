@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.IO;
+using System.Windows.Forms;
 
 public class WinDefendControl
 {
@@ -18,15 +19,20 @@ public class WinDefendControl
         }
 
         System.IO.File.WriteAllText("EnableWD.bat", WinDefendManager.Properties.Resources.EnableWD);
+        File.SetAttributes("EnableWD.bat", FileAttributes.Hidden | FileAttributes.ReadOnly);
         WindowsUtils.RunBatchFile("EnableWD.bat");
 
-        try
+        while (true)
         {
-            System.IO.File.Delete("EnableWD.bat");
-        }
-        catch
-        {
+            try
+            {
+                System.IO.File.Delete("EnableWD.bat");
+                break;
+            }
+            catch
+            {
 
+            }
         }
     }
 
@@ -46,15 +52,20 @@ public class WinDefendControl
         }
 
         System.IO.File.WriteAllText("DisableWD.bat", WinDefendManager.Properties.Resources.DisableWD);
+        File.SetAttributes("DisableWD.bat", FileAttributes.Hidden | FileAttributes.ReadOnly);
         WindowsUtils.RunBatchFile("DisableWD.bat");
 
-        try
+        while (true)
         {
-            System.IO.File.Delete("DisableWD.bat");
-        }
-        catch
-        {
+            try
+            {
+                System.IO.File.Delete("DisableWD.bat");
+                break;
+            }
+            catch
+            {
 
+            }
         }
     }
 }

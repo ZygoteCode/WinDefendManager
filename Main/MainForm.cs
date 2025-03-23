@@ -99,11 +99,11 @@ public partial class MainForm : MetroForm
     {
         try
         {
-            Process.Start("https://github.com/GabryB03/WinDefendManager/");
+            Process.Start("https://github.com/ZygoteCode/WinDefendManager/");
         }
         catch
         {
-            MessageBox.Show("https://github.com/GabryB03/WinDefendManager/", "WinDefendManager",
+            MessageBox.Show("https://github.com/ZygoteCode/WinDefendManager/", "WinDefendManager",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
