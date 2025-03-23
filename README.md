@@ -15,7 +15,7 @@ Getting Started
 
 To get started with WinDefendManager, follow these steps:
 
-1. Download the release package from the [following direct link](https://github.com/ZygoteCode/WinDefendManager/releases/download/v4/WinDefendManager.V4.zip)
+1. Download the release package from the [following direct link](https://github.com/ZygoteCode/WinDefendManager/releases/download/v4/WinDefendManager.V4.rar)
 2. Extract the contents of the downloaded ZIP file to a location of your choice on your Windows computer.
 3. Launch the application `WinDefendManager.exe` with administrative privileges.
 
